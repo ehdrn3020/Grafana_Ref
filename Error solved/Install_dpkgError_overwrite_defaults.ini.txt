@@ -1,0 +1,22 @@
+﻿###Erorr Reporting
+
+
+#You can't save/remove button does not appear in grafana UI
+
+#Also Error mesage in linux like 
+$
+(Reading database ... 416705 files and directories currently installed.)
+Preparing to unpack grafana_3.1.1-1470047149_amd64.deb ...
+Unpacking grafana (3.1.1-1470047149) ...
+dpkg: error processing archive grafana_3.1.1-1470047149_amd64.deb (--install):
+ trying to overwrite '/usr/share/grafana/conf/defaults.ini', which is also in package grafana-data 2.6.0+dfsg-1
+dpkg-deb: error: subprocess paste was killed by signal (Broken pipe)
+Processing triggers for systemd (229-4ubuntu7) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Errors were encountered while processing:
+ grafana_3.1.1-1470047149_amd64.deb
+
+
+#You can fix as following process reinstall like this URL.
+-http://installfights.blogspot.kr/2016/09/grafanas-saveremove-button-does-not.html
+-http://docs.grafana.org/installation/debian/
